@@ -8,31 +8,31 @@ import Cart from '../views/Cart.vue'
 
 const routes = [
   { 
-    path: '/', 
+    path: '/techzone/', 
     component: Home 
   },
   { 
-    path: '/home', 
+    path: '/techzone/home', 
     component: Home 
   },
   { 
-    path: '/login', 
+    path: '/techzone//login', 
     component: Login 
   },
   { 
-    path: '/register', 
+    path: '/techzone//register', 
     component: Register 
   },
   { 
-    path: '/orders', 
+    path: '/techzone//orders', 
     component: Orders 
   },
   { 
-    path: '/cart', 
+    path: '/techzone//cart', 
     component: Cart 
   },
   { 
-    path: '/admin', 
+    path: '/techzone//admin', 
     component: Admin,
     meta: { requiresAdmin: true }
   },
@@ -51,7 +51,7 @@ router.beforeEach((to, from, next) => {
       next();
     } 
     else {
-      next("/home");
+      next("/techzone//home");
     }
   } 
   else {
