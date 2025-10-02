@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
@@ -8,38 +8,38 @@ import Cart from '../views/Cart.vue'
 
 const routes = [
   { 
-    path: '/techzone/', 
+    path: '/', 
     component: Home 
   },
   { 
-    path: '/techzone/home', 
+    path: '/home', 
     component: Home 
   },
   { 
-    path: '/techzone//login', 
+    path: '/login', 
     component: Login 
   },
   { 
-    path: '/techzone//register', 
+    path: '/register', 
     component: Register 
   },
   { 
-    path: '/techzone//orders', 
+    path: '/orders', 
     component: Orders 
   },
   { 
-    path: '/techzone//cart', 
+    path: '/cart', 
     component: Cart 
   },
   { 
-    path: '/techzone//admin', 
+    path: '/admin', 
     component: Admin,
     meta: { requiresAdmin: true }
   },
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes
 })
 
