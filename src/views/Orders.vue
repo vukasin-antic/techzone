@@ -1,6 +1,8 @@
-<!-- npm run build
-npm install gh-pages --save-dev
-npm run deploy 
+<!-- git add .
+git commit -m "Update index.js"
+git push origin main
+npm run build
+npm run deploy
 
 kad hostujem fajlove
 -->
