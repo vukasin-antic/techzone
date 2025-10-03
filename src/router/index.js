@@ -51,7 +51,7 @@ router.beforeEach((to, from, next) => {
       next();
     } 
     else {
-      next("/techzone//home");
+      next("/");
     }
   } 
   else {
