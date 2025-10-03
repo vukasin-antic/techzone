@@ -103,7 +103,7 @@ export default {
       window.dispatchEvent(new Event("storage"))
     },
     imagePath(imgName) {
-      return `/images/${imgName}.jpg`
+      return `images/${imgName}.jpg`
     }
   }
 }
