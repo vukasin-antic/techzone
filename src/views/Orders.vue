@@ -1,3 +1,13 @@
+<!-- npm run build
+npm install gh-pages --save-dev
+npm run deploy 
+
+kad hostujem fajlove
+-->
+
+
+
+
 <template>
   <div class="container">
     <h2>All Products</h2>

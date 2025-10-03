@@ -59,11 +59,6 @@ export default {
     },
     addProduct() {
 
-      // const regExTitle = /^[A-Z][a-zA-Z]{1,}?$/
-      // if (!regExTitle.test(this.newProduct.title)) {
-      //   this.errorMessage = "Price must contain only letters (e.g. Laptop or Pc)"
-      //   return
-      // }
       if(!this.newProduct.title){
         this.errorMessage = "You need to enter name of the product!"
         return
@@ -108,7 +103,7 @@ export default {
       window.dispatchEvent(new Event("storage"))
     },
     imagePath(imgName) {
-      return `src/assets/images/${imgName}.jpg`
+      return `/images/${imgName}.jpg`
     }
   }
 }
