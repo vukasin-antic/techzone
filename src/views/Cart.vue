@@ -26,7 +26,7 @@
         </div>
         <div class="product-grid" v-else>
           <div  class="product-card" v-for="(item, index) in cart" :key="index">
-            <img :src="item.image.startsWith('http') ? item.image : '/src/assets/images/' + item.image + '.jpg'" :alt="item.title" />
+            <img :src="item.image.startsWith('http') ? item.image : 'images/' + item.image + '.jpg'" :alt="item.title" />
             <div>
               <h3>{{ item.title }}</h3>
               <p class="price">${{ item.price }}</p>

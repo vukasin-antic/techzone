@@ -14,7 +14,7 @@ kad hostujem fajlove
     <input v-model="search" placeholder="Search products..." />
     <div class="product-grid">
       <div class="product-card" v-for="p in filteredProducts" :key="p.id">
-        <img :src="p.image.startsWith('http') ? p.image : '/src/assets/images/' + p.image + '.jpg'" :alt="p.title" />
+        <img :src="p.image.startsWith('http') ? p.image : 'images/' + p.image + '.jpg'" :alt="p.title" />
         <h3>{{ p.title }}</h3>
         <p class="price">${{ p.price }}</p>
         <button @click="addToCart(p)">Add to Cart</button>
