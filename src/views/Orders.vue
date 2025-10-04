@@ -1,4 +1,6 @@
-<!-- git add .
+<!-- 
+npm run build 
+git add .
 git commit -m "Update index.js"
 git push origin main
 npm run build
