@@ -66,7 +66,6 @@ export default {
         const { [product.id]: removed, ...rest } = this.successMsg
         this.successMsg = rest
       }, 3000)
-      console.log(this.successMsg)
     }
   }
 }
